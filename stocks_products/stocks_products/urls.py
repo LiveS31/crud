@@ -21,5 +21,5 @@ from crud.stocks_products.logistic.views import test_page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('logistic.urls')),
-    path('api/v1/test',test_page),
+    path('api/v1/test',test_page)
 ]
