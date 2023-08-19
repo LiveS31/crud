@@ -1,7 +1,8 @@
 from django.core.validators import MinValueValidator
 from django.db import models
 
-#создаем таблицы и связи
+# создаем таблицы и связи
+
 
 class Product(models.Model):
     title = models.CharField(max_length=60, unique=True)
@@ -34,3 +35,4 @@ class StockProduct(models.Model):
         decimal_places=2,
         validators=[MinValueValidator(0)],
     )
+    pass
