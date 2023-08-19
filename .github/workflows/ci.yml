@@ -5,7 +5,7 @@ on:
     branches: [ci]
 
   jobs:
-    runs-on: ubuntu 22.04
+    runs-on: ubuntu:22.04
 
     env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
