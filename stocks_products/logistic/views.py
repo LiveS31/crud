@@ -1,3 +1,4 @@
+from rest_framework.decorators import api_view
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
@@ -27,4 +28,4 @@ class StockViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def test_page(request):
-    return Response('hello my frend')
+    return Response('Hello my frend!')
