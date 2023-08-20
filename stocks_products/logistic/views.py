@@ -1,10 +1,11 @@
+from rest_framework.decorators import api_view
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
 from django_filters.rest_framework import DjangoFilterBackend
-#
 from .models import Product, Stock
 from .serializers import ProductSerializer, StockSerializer
+from rest_framework.response import Response
 
 
 class ProductViewSet(ModelViewSet):
@@ -24,3 +25,8 @@ class StockViewSet(ModelViewSet):
     search_fields = ['address']
     filterset_fields = ['products']
     pagination_class = LimitOffsetPagination
+
+
+@api_view(['GET'])
+def test_page(request):
+    return Response('!Не фига не ясно! но очень интересно!!!!')
