@@ -47,7 +47,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Листинг кода
-        run: flake8 logistic --exclude logistic/migrations/
+        run: flake8 logistic --exclude crud/logistic/migrations/
 
       - name: тестирование кода
         run: python manage.py test
