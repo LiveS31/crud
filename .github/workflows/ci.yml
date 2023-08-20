@@ -48,8 +48,9 @@ jobs:
 
       - name: Листинг кода
         #run: ls
-        run: flake8 stocks_products --exclude stocks_products  # --exclude stocks_products/logistic/migrations/
-
+        run: flake8 stocks_products --exclude stocks_products
+# --exclude stocks_products/logistic/migrations/
+# Я не разобрался как игнорировать несколько файлов. смог только директорию
       - name: тестирование кода
         #run: ls
         run: python stocks_products/manage.py test
