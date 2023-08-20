@@ -71,4 +71,4 @@ jobs:
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.HOST_USER }}
           password: ${{ secrets.HOST_PASS }}
-          script: expect /home/sergey/crud/stocks_products/deploy.exp
+          script: expect /home/sergey/crud/deploy.exp
