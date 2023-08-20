@@ -8,4 +8,4 @@ class TestView(TestCase):
         client = APIClient()
         response = client.get(url)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, 'Нефига не ясно! но очень интересно!!!!')
+        self.assertEqual(response.data, '!Не фига не ясно! но очень интересно!!!!')
