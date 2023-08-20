@@ -29,4 +29,4 @@ class StockViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def test_page(request):
-    return Response('Оно работает!')
+    return Response('Нефига не ясно! но очень интересно!!!!')
