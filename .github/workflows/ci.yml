@@ -48,7 +48,7 @@ jobs:
 
       - name: Листинг кода
         #run: ls
-        run: flake8 stocks_products --exclude stocks_products/stocks_products/ --exclude stocks_products/logistic/migrations/
+        run: flake8 stocks_products --exclude stocks_products/ --exclude stocks_products/logistic/migrations/
 
       - name: тестирование кода
         #run: ls
